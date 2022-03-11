@@ -1,0 +1,23 @@
+* Normal Class : 정상60~70%, 폐혼탁없는데 비정상 : 25~27%, 폐혼탁 : 3~7% 
+총 Dataset 크기(Train/Test) :  (26000/3000)
+
+* Resnet50 :   20epoch loss는 0.161042      / 1epoch 기준 200초
+
+* Mask RCNN : 1peoch 14~15분 => 412s로 단축하는것 찾음
+- Augmentation : Zoom, Vertical+Horizontal flip, rotate change
+
+LeaderBoard Rank : 0.25475, 0.24781, 0.23908
+검증 score : AP
+
+============================11.11 피드백==========================================
+
+!!! 11.11 교수님 피드백
+Data(폐혼탁) Data_Preprocessing (Augmentation) + 
+Faster_RCNN 이랑 Mask RCNN 비슷하다.
+
+transformer, object detection(
+
+앙상블은 최종에하고 일단 개별적 모델 성능을 최대한 끌어올리기
+
+!!Transformer계열 모델 시도 + 폐혼탁 Data 사례분석
++ 여러모델돌리기(VGG-16), Xception, inception +최근논문 확인

@@ -1,0 +1,13 @@
+!!! 11.11 교수님 피드백
+Data(폐혼탁) Data_Preprocessing (Augmentation) + 
+Faster_RCNN 이랑 Mask RCNN 비슷하다.
+
+transformer, object detection
+
+앙상블은 최종에하고 일단 개별적 모델 성능을 최대한 끌어올리기
+
+!!Transformer계열 모델 시도 + 폐혼탁 Data 사례분석
++ 여러모델돌리기(VGG-16), Xception, inception +최근논문 확인
+
+* 참고논문
+- Transformer를 이용한 폐 질환 진단(COVID-19) / https://arxiv.org/pdf/2104.07235.pdf

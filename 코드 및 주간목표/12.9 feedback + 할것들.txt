@@ -1,0 +1,8 @@
+* 할것들
+	- DETR돌리기
+	- Lung Opacity관련 의학 논문 10.11월꺼 참고하고 기법 착안
+	- PPT에 Augmentation 적용 사진 넣기
+
+* Feedback
+	- kaggle data기반 분류한 최신논문 성능 비교
+	- 0.28~9, 0.3정도의 점수가 나와야 될거같음

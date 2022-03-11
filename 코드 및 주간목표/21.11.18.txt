@@ -1,0 +1,28 @@
+- InceptionV3 : 
+	20epoch기준 0.242(score) 1epoch에 280s / Batchsize(24), Lr(0.0001)
+
+- Transformer 계열 모델 :
+	Transformer를 이용한 폐 질환 진단(COVID-19) / https://arxiv.org/pdf/2104.07235.pdf
+Vision Transformer using Low-level Chest X-ray Feature Corpus for COVID-19
+Diagnosis and Severity Quantification
+
+Transformer, Encoder, Decoder
+	- Model : DETR Object_Detection => ISTR(HEAVY)
+
+Transformer모델을 다룬적이없어서 논문을봐도 잘 이해가안되고 논문만 10시간정도 볼수가없어서
+일단 Transformer모델을 갖다쓰는데 목적을두고 했는데 코드를 못찾겠음
+
+* 폐혼탁 데이터 분석 : 
+	=> Lung Opacity 데이터가 어떤 특징이 있나해서 LungOpacity를 일단 이미지자체를 육안으로 
+	비교해봤는데 Lung Opacity가 가장 혼탁한 폐긴하지만 크게 차이가 없다.
+	그래서 lung Opacity를 잘 잡아줄것같은 Augmentation을 몇개 적용해봤는데
+	horizontal, vertical flip, rotation 이런건 큰 차이가 없을거같고
+
+	-> Zoom(0.05)
+	-> brightness_range(0.8?)
+	밝기 적용했을때 (Resnet기준 0.223 -> 0.232)
+
+================================Feedback======================================
+- Inception에 밝기 Aug. 
+- Transformer model(DETR) 
+- Lung Opacity관련 MEDICAL PAPER(딥러닝 적용한 논문 젤최근꺼(10.11월) 기법 착안
